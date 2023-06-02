@@ -2,8 +2,9 @@ import os
 import datetime
 import streamlit as st
 
-from dotenv import load_dotenv
-load_dotenv()
+if os.environ["OPENAI_API_KEY"] == "":
+  from dotenv import load_dotenv
+  load_dotenv()
 
 from langchain.llms import OpenAI
 
