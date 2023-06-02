@@ -15,7 +15,7 @@ llm = load_model()
 
 """
 # LLM example
-Leer de bijzonderheden van je voornaam en geboortedatum
+Leer 3 bijzonderheden van je voornaam en geboortedatum
 
 """
 
