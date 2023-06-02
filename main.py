@@ -28,7 +28,7 @@ birthdate = st.date_input("# Geboortedatum", value=birthdate)
 ""
 ""
 
-prompt = f"""Ik ben {name} en geboren op {birthdate.strftime("%d-%m-%Y")}. Kun je 3 opvallende bijzonderheden over mijn naam en 3 opvallende bijzonderheden over mijn geboortedatum opnoemen? Formatter het antwoord in markdown en gebruik de headers: Bijzonderheden voornaam: en Bijzonderheden geboortedatum:"""
+prompt = f"""Ik ben {name} en geboren op {birthdate.strftime("%d-%m-%Y")}. Kun je 3 interessante bijzonderheden over mijn naam en 3 interessante gebeurtenissen op mijn geboortedatum opnoemen? Formatter het antwoord in markdown en gebruik de headers: Bijzonderheden voornaam: en Bijzonderheden geboortedatum:"""
 
 st.markdown(llm(prompt))
 
